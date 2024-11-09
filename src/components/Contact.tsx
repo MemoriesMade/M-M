@@ -66,7 +66,6 @@ const Contact = () => {
                 placeholder="Número de WhatsApp"
                 className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:outline-none focus:border-amber-700"
                 pattern="^\d{10,15}$"
-                title="Ingrese un número de WhatsApp válido (10 a 15 dígitos). Ejemplo: 1234567890"
                 required
               />
             </div>
