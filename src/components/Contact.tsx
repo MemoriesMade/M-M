@@ -14,7 +14,7 @@ const Contact = () => {
             <h3 className="text-2xl font-serif mb-6">Hablemos de tu Evento</h3>
             <div className="space-y-4">
               <a 
-                href="https://wa.me/4625130025"
+                href="https://wa.me/+524625130025?text=Hola,%20estoy%20interesado%20en%20obtener%20información%20sobre%20sus%20servicios%20de%20organización%20de%20eventos.%20¿Podrían%20ayudarme?"
                 className="flex items-center gap-3 text-neutral-700 hover:text-amber-700 transition-colors"
               >
                 <Phone size={20} />
