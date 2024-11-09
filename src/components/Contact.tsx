@@ -18,7 +18,7 @@ const Contact = () => {
                 className="flex items-center gap-3 text-neutral-700 hover:text-amber-700 transition-colors"
               >
                 <Phone size={20} />
-                <span>462 513 0025</span>
+                <span>+52 462 513 0025</span>
               </a>
               <div className="flex items-center gap-3 text-neutral-700">
                 <Mail size={20} />
