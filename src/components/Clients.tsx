@@ -21,12 +21,13 @@ const Clients = () => {
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="w-32 h-32 bg-white rounded-lg shadow-sm flex items-center justify-center p-4"
+              className="w-40 h-40 bg-white rounded-lg shadow-sm flex items-center justify-center p-4"
             >
               <img
                 src={logo.src}
                 alt={logo.alt}
                 className="max-w-full max-h-full"
+                style={{ width: '100%', height: 'auto' }} // Ajuste del tamaño de la imagen
               />
             </div>
           ))}
