@@ -36,8 +36,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg mb-4">Contacto</h4>
             <a 
-              href="https://wa.me/+524625130025?text=Hola,%20estoy%20interesado%20en%20obtener%20información%20sobre%20sus%20servicios%20de%20organización%20de%20eventos.%20¿Podrían%20ayudarme?
-"
+              href="https://wa.me/+524625130025?text=Hola,%20estoy%20interesado%20en%20obtener%20información%20sobre%20sus%20servicios%20de%20organización%20de%20eventos.%20¿Podrían%20ayudarme?"
               className="flex items-center gap-2 bg-amber-700 text-white px-4 py-2 rounded-full hover:bg-amber-800 transition-colors w-fit"
             >
               <Phone size={18} />
