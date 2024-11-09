@@ -31,12 +31,8 @@ const Contact = () => {
             </div>
           </div>
 
-          <form 
-            name="contact" 
-            method="POST" 
-            data-netlify="true" 
-            className="space-y-6"
-          >
+<form name="contact" netlify>
+  
             <input type="hidden" name="form-name" value="contact" />
             
             <div>
