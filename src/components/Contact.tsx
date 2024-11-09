@@ -31,26 +31,48 @@ const Contact = () => {
             </div>
           </div>
 
-          <form className="space-y-6">
+          <form 
+            name="contact" 
+            method="POST" 
+            data-netlify="true" 
+            className="space-y-6"
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <input
                 type="text"
+                name="name"
                 placeholder="Nombre"
                 className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:outline-none focus:border-amber-700"
+                required
               />
             </div>
             <div>
               <input
                 type="email"
+                name="email"
                 placeholder="Email"
                 className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:outline-none focus:border-amber-700"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                name="whatsapp"
+                placeholder="Número de WhatsApp"
+                className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:outline-none focus:border-amber-700"
+                pattern="^\+?\d{10,15}$" // Expresión regular para validar números de teléfono
+                required
               />
             </div>
             <div>
               <textarea
+                name="message"
                 rows={4}
                 placeholder="Mensaje"
                 className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:outline-none focus:border-amber-700"
+                required
               />
             </div>
             <button
