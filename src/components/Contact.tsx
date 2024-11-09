@@ -2,6 +2,21 @@ import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
+  // Función para manejar el envío del formulario usando AJAX
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => alert("Formulario enviado correctamente"))
+      .catch((error) => alert("Error al enviar el formulario: " + error));
+  };
+
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
@@ -31,10 +46,16 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* Formulario de contacto */}
           <form 
-            name="contact" netlify
+            name="contact" 
+            method="POST" 
+            data-netlify="true" 
+            onSubmit={handleSubmit}
+            action="/thank-you" // Ruta para redireccionar después del envío exitoso
             className="space-y-6"
           >
+            {/* Campo oculto para que Netlify detecte el formulario */}
             <input type="hidden" name="form-name" value="contact" />
             
             <div>
@@ -64,6 +85,7 @@ const Contact = () => {
                 placeholder="Número de WhatsApp"
                 className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:outline-none focus:border-amber-700"
                 pattern="^\d{10,15}$"
+                title="Ingrese un número de WhatsApp válido (10 a 15 dígitos). Ejemplo: 1234567890"
                 required
               />
             </div>
@@ -92,3 +114,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
