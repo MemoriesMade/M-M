@@ -26,7 +26,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-3 text-neutral-700">
                 <MapPin size={20} />
-                <span>Celaya, Guanajuato, México</span>
+                <span>C. Manuel López Cotilla 1505, Col Americana, Lafayette, 44160 Guadalajara, Jal.</span>
               </div>
             </div>
           </div>
