@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Clients = () => {
-  // Lista de logotipos con las rutas
+  // Lista de logotipos con los nombres exactos de los archivos
   const logos = [
-    { src: '/logos/crv_logo.png', alt: 'CRV & Co' },
-    { src: '/logos/inbest_logo.png', alt: 'INBest' },
-    { src: '/logos/thomas_jefferson_logo.png', alt: 'Instituto Thomas Jefferson' },
-    { src: '/logos/zucamping_logo.png', alt: 'Zucamping' },
-    { src: '/logos/deutsche_schule_logo.png', alt: 'Deutsche Schule Guadalajara' },
+    { src: '/logos/CRV.png', alt: 'CRV & Co' },
+    { src: '/logos/iNBest.png', alt: 'INBest' },
+    { src: '/logos/ITJ.png', alt: 'Instituto Thomas Jefferson' },
+    { src: '/logos/Zucamping.png', alt: 'Zucamping' },
+    { src: '/logos/Aleman.png', alt: 'Deutsche Schule Guadalajara' },
   ];
 
   return (
