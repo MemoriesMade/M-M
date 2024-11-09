@@ -51,13 +51,13 @@ const Footer = () => {
               © {new Date().getFullYear()} Memories Made. Todos los derechos reservados.
             </div>
             <div className="flex gap-4">
-              <a href="#" className="text-neutral-400 hover:text-amber-500">
+              <a href="https://www.instagram.com/memories_mco/" className="text-neutral-400 hover:text-amber-500">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-neutral-400 hover:text-amber-500">
+              <a href="https://www.instagram.com/memories_mco/" className="text-neutral-400 hover:text-amber-500">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-neutral-400 hover:text-amber-500">
+              <a href="https://www.instagram.com/memories_mco/" className="text-neutral-400 hover:text-amber-500">
                 <Twitter size={20} />
               </a>
             </div>
