@@ -21,7 +21,7 @@ const Hero = () => {
           Especialistas en eventos exclusivos que superan expectativas
         </p>
         <a 
-          href="https://wa.me/4625130025"
+          href="https://wa.me/+524625130025?text=Hola,%20estoy%20interesado%20en%20obtener%20información%20sobre%20sus%20servicios%20de%20organización%20de%20eventos.%20¿Podrían%20ayudarme?"
           className="bg-amber-700 text-white px-8 py-3 rounded-full text-lg hover:bg-amber-800 transition-colors"
         >
           Planea tu Evento
