@@ -22,7 +22,7 @@ const Contact = () => {
               </a>
               <div className="flex items-center gap-3 text-neutral-700">
                 <Mail size={20} />
-                <span>contacto@memoriesmade.com</span>
+                <span>contacto@memoriesm.com</span>
               </div>
               <div className="flex items-center gap-3 text-neutral-700">
                 <MapPin size={20} />
