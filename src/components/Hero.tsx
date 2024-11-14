@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
-import Typed from 'react-typed';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
   return (
@@ -19,13 +19,17 @@ const Hero = () => {
       <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4">
         <h1 className="text-4xl md:text-6xl font-serif mb-6">
           Creamos Momentos{' '}
-          <Typed
-            strings={['Inolvidables', 'Únicos', 'Especiales']}
-            typeSpeed={100}    // Velocidad al escribir
-            backSpeed={60}      // Velocidad al borrar
-            backDelay={2000}    // Pausa antes de borrar
-            loop               // Repetir animación
-          />
+          <span>
+            <Typewriter
+              words={['Inolvidables', 'Únicos', 'Especiales']}
+              loop={0} // 0 = infinito
+              cursor
+              cursorStyle="_"
+              typeSpeed={100}
+              deleteSpeed={60}
+              delaySpeed={2000}
+            />
+          </span>
         </h1>
         <p className="text-xl md:text-2xl max-w-2xl mb-8">
           Especialistas en eventos exclusivos que superan expectativas
@@ -47,4 +51,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
