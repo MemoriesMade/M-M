@@ -1,9 +1,11 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
+import Typed from 'react-typed';
 
 const Hero = () => {
   return (
     <div className="relative h-screen">
+      {/* Fondo de imagen */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -13,9 +15,17 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/40" />
       </div>
       
+      {/* Contenido principal */}
       <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4">
         <h1 className="text-4xl md:text-6xl font-serif mb-6">
-          Creamos Momentos Inolvidables
+          Creamos Momentos{' '}
+          <Typed
+            strings={['Inolvidables', 'Únicos', 'Especiales']}
+            typeSpeed={100}    // Velocidad al escribir
+            backSpeed={60}      // Velocidad al borrar
+            backDelay={2000}    // Pausa antes de borrar
+            loop               // Repetir animación
+          />
         </h1>
         <p className="text-xl md:text-2xl max-w-2xl mb-8">
           Especialistas en eventos exclusivos que superan expectativas
@@ -28,6 +38,7 @@ const Hero = () => {
         </a>
       </div>
 
+      {/* Icono de flecha animado */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <ChevronDown size={32} className="text-white" />
       </div>
@@ -36,3 +47,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
