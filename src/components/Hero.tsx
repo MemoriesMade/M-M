@@ -5,15 +5,31 @@ import { Typewriter } from 'react-simple-typewriter';
 const Hero = () => {
   return (
     <div className="relative h-screen">
-      {/* Fondo de imagen */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80")',
-        }}
-      >
+      {/* Fondo de video */}
+      <div className="absolute inset-0">
+        <video
+          className="w-full h-full object-cover"
+          src="/logos/12423709_1920_1080_25fps.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        ></video>
         <div className="absolute inset-0 bg-black/40" />
       </div>
+      
+      {/* Contenido adicional */}
+      <div className="relative z-10 flex items-center justify-center h-full">
+        <h1 className="text-white text-4xl md:text-6xl font-bold text-center">
+          Organización de Eventos a tu Alcance
+        </h1>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
+
       
       {/* Contenido principal */}
       <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4">
