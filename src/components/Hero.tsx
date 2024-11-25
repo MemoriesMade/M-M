@@ -17,22 +17,9 @@ const Hero = () => {
         ></video>
         <div className="absolute inset-0 bg-black/40" />
       </div>
-      
-      {/* Contenido adicional */}
-      <div className="relative z-10 flex items-center justify-center h-full">
-        <h1 className="text-white text-4xl md:text-6xl font-bold text-center">
-          Organización de Eventos a tu Alcance
-        </h1>
-      </div>
-    </div>
-  );
-};
 
-export default Hero;
-
-      
       {/* Contenido principal */}
-      <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
         <h1 className="text-4xl md:text-6xl font-serif mb-6">
           Creamos Momentos{' '}
           <span>
@@ -50,7 +37,7 @@ export default Hero;
         <p className="text-xl md:text-2xl max-w-2xl mb-8">
           Especialistas en eventos exclusivos que superan expectativas
         </p>
-        <a 
+        <a
           href="https://wa.me/+524625130025?text=Hola,%20estoy%20interesado%20en%20obtener%20información%20sobre%20sus%20servicios%20de%20organización%20de%20eventos.%20¿Podrían%20ayudarme?"
           className="bg-amber-700 text-white px-8 py-3 rounded-full text-lg hover:bg-amber-800 transition-colors"
         >
@@ -67,3 +54,4 @@ export default Hero;
 };
 
 export default Hero;
+
