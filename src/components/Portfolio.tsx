@@ -2,32 +2,32 @@ import React from 'react';
 
 const portfolioItems = [
   {
-    image: '/logos/wedding_celebration.webp',
+    image: '/logos/wedding_celebration.jpg',
     category: 'Wedding celebration',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
-    image: '/logos/corporate_event.webp',
+    image: '/logos/corporate_event.jpg',
     category: 'Corporate event',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
-    image: '/logos/birthday_party.webp',
+    image: '/logos/birthday_party.jpg',
     category: 'Birthday party',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
-    image: '/logos/gala_dinner.webp',
+    image: '/logos/gala_dinner.jpg',
     category: 'Gala dinner',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
-    image: '/logos/music_event.webp',
+    image: '/logos/music_event.jpg',
     category: 'Music event',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
-    image: '/logos/private_party.webp',
+    image: '/logos/private_party.jpg',
     category: 'Private party',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
