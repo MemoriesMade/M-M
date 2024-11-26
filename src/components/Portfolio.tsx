@@ -4,30 +4,40 @@ const portfolioItems = [
   {
     image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80',
     category: 'Wedding celebration',
+    brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
     image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80',
     category: 'Corporate event',
+    brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
     image: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80',
     category: 'Birthday party',
+    brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
     image: 'https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&q=80',
     category: 'Gala dinner',
+    brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
     image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80',
     category: 'Music event',
+    brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
     image: 'https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&q=80',
     category: 'Private party',
+    brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
 ];
 
 const Portfolio = () => {
+  const handleItemClick = (url) => {
+    window.open(url, '_blank'); // Abre el PDF en una nueva pestaña
+  };
+
   return (
     <section id="portfolio" className="py-20">
       <div className="container mx-auto px-4">
@@ -37,9 +47,10 @@ const Portfolio = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioItems.map((item, index) => (
-            <div 
+            <div
               key={index}
-              className="relative group overflow-hidden rounded-lg aspect-video"
+              className="relative group overflow-hidden rounded-lg aspect-video cursor-pointer"
+              onClick={() => handleItemClick(item.brochureUrl)}
             >
               <img
                 src={item.image}
