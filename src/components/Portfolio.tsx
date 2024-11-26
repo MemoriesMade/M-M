@@ -2,20 +2,28 @@ import React from 'react';
 
 const portfolioItems = [
   {
-    image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80',
-    category: 'Bodas',
+    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80',
+    category: 'Wedding celebration',
   },
   {
     image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80',
-    category: 'Corporativo',
+    category: 'Corporate event',
   },
   {
     image: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80',
-    category: 'Galas',
+    category: 'Birthday party',
   },
   {
-    image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&q=80',
-    category: 'Celebraciones',
+    image: 'https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&q=80',
+    category: 'Gala dinner',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80',
+    category: 'Music event',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&q=80',
+    category: 'Private party',
   },
 ];
 
