@@ -2,32 +2,32 @@ import React from 'react';
 
 const portfolioItems = [
   {
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80',
+    image: '/logos/wedding_celebration.webp',
     category: 'Wedding celebration',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
-    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80',
+    image: '/logos/corporate_event.webp',
     category: 'Corporate event',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
-    image: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80',
+    image: '/logos/birthday_party.webp',
     category: 'Birthday party',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
-    image: 'https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&q=80',
+    image: '/logos/gala_dinner.webp',
     category: 'Gala dinner',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
-    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80',
+    image: '/logos/music_event.webp',
     category: 'Music event',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
   {
-    image: 'https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&q=80',
+    image: '/logos/private_party.webp',
     category: 'Private party',
     brochureUrl: 'https://memoriesm.s3.us-east-1.amazonaws.com/MM_Brochure.pdf',
   },
