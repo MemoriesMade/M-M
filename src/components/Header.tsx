@@ -16,7 +16,7 @@ const Header = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-neutral-700 hover:text-amber-700 transition-colors">Servicios</a>
-            <a href="#portfolio" className="text-neutral-700 hover:text-amber-700 transition-colors">Portfolio</a>
+            <a href="#portfolio" className="text-neutral-700 hover:text-amber-700 transition-colors">Portafolio</a>
             <a href="#clients" className="text-neutral-700 hover:text-amber-700 transition-colors">Clientes</a>
             <a href="#contact" className="text-neutral-700 hover:text-amber-700 transition-colors">Contacto</a>
             <a 
@@ -42,7 +42,7 @@ const Header = () => {
           <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg">
             <div className="flex flex-col space-y-4 p-4">
               <a href="#services" className="text-neutral-700 hover:text-amber-700 transition-colors">Servicios</a>
-              <a href="#portfolio" className="text-neutral-700 hover:text-amber-700 transition-colors">Portfolio</a>
+              <a href="#portfolio" className="text-neutral-700 hover:text-amber-700 transition-colors">Portafolio</a>
               <a href="#clients" className="text-neutral-700 hover:text-amber-700 transition-colors">Clientes</a>
               <a href="#contact" className="text-neutral-700 hover:text-amber-700 transition-colors">Contacto</a>
               <a 
