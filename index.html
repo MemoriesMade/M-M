@@ -16,7 +16,7 @@
       gtag('config', 'G-3RZ77XH90X');
     </script>
 
-    <!-- Open Graph tags -->
+    <!-- Open Graph tags para redes sociales -->
     <meta property="og:title" content="Memories Made - Organización de Eventos Inolvidables" />
     <meta property="og:description" content="En Memories Made, nos especializamos en la organización de eventos únicos y memorables." />
     <meta property="og:image" content="/logos/imagen-compartida.png" />
@@ -32,7 +32,7 @@
   <body>
     <div id="root"></div>
 
-    <!-- Formulario oculto para Netlify -->
+    <!-- Formulario oculto para que Netlify lo detecte -->
     <form name="contact" data-netlify="true" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
@@ -40,53 +40,38 @@
       <textarea name="message"></textarea>
     </form>
 
-    <!-- Chatbot personalizado -->
-    <div id="custom-chatbar" style="position:fixed; bottom: 30px; left: 30px; background:#f0f4ff; padding: 10px 20px; border-radius: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); display: flex; align-items: center; z-index: 9999;">
-      <input 
-        type="text" 
-        id="chat-input" 
-        placeholder="Haz tu pregunta al chatbot..." 
-        style="border:none; outline:none; background:transparent; font-size:16px; width:220px; color:#333;" 
-      />
-      <button 
-        onclick="openBotmakerChat()" 
-        style="background: none; border: none; cursor: pointer; margin-left: 10px; font-size: 20px;" 
-        title="Enviar pregunta">
-        ✨
-      </button>
-    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/logos/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memories Made</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RZ77XH90X"></script>
     <script>
-      // Configuración del bot para evitar apertura automática
-      window.botmakerConfig = {
-        autostart: false
-      };
-
-      // Función para abrir el chatbot con el mensaje del usuario
-      function openBotmakerChat() {
-        const userInput = document.getElementById('chat-input').value.trim();
-        if (!userInput) return;
-
-        if (!window.botmakerChat) {
-          const script = document.createElement('script');
-          script.type = 'text/javascript';
-          script.async = true;
-          script.src = 'https://go.botmaker.com/rest/webchat/p/ECNSRDV5ZP/init.js';
-          document.body.appendChild(script);
-        }
-
-        const interval = setInterval(() => {
-          if (window.botmakerChat && window.botmakerChat.sendMessage) {
-            window.botmakerChat.open();
-            window.botmakerChat.sendMessage(userInput);
-            document.getElementById('chat-input').value = '';
-            clearInterval(interval);
-          }
-        }, 200);
-      }
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3RZ77XH90X');
     </script>
+    
+  </head>
+  <body>
+    <div id="root"></div>
 
-    <!-- Script principal -->
+    <!-- Formulario oculto para que Netlify lo detecte -->
+    <form name="contact" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="whatsapp" />
+      <textarea name="message"></textarea>
+    </form>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
