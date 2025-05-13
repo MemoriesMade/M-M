@@ -40,39 +40,20 @@
       <textarea name="message"></textarea>
     </form>
 
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/logos/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Memories Made</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RZ77XH90X"></script>
+    <!-- START Botmaker Webchat-->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3RZ77XH90X');
+        (function () {
+            let js = document.createElement('script');
+            js.type = 'text/javascript';
+            js.async = 1;
+            js.src = 'https://go.botmaker.com/rest/webchat/p/ECNSRDV5ZP/init.js';
+            document.body.appendChild(js);
+        })();
     </script>
-    
-  </head>
-  <body>
-    <div id="root"></div>
-
-    <!-- Formulario oculto para que Netlify lo detecte -->
-    <form name="contact" data-netlify="true" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <input type="tel" name="whatsapp" />
-      <textarea name="message"></textarea>
-    </form>
+    <!-- END Botmaker Webchat-->
 
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
 
