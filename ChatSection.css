@@ -1,0 +1,35 @@
+/* src/styles/ChatSection.css */
+
+.chat-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  margin-top: 2rem;
+}
+
+.chat-section h2 {
+  margin-bottom: 1rem;
+}
+
+.chat-input-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.chat-input-container input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.chat-input-container button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-input-container button:hover {
+  background-color: #0056b3;
+}
