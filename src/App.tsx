@@ -6,7 +6,6 @@ import Portfolio from './components/Portfolio';
 import Clients from './components/Clients';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import ChatSection from './components/ChatSection'; // <- nuevo
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
       <Hero />
       <Services />
       <Portfolio />
-      <ChatSection /> {/* Sección del chatbot después del portfolio (donde puede ir el video) */}
       <Clients />
       <Contact />
       <Footer />
